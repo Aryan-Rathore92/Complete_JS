@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="7.css">
+</head>
+<body style="background-color: #222;">
+<div class="main">
+  <form class="form" id="loginForm" autocomplete="off">
+    <h2>Login</h2>
+
+    <!-- Email -->
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input 
+        type="text" 
+        id="email" 
+        name="email"
+        placeholder="Enter your email"
+      >
+      <small class="error-email"></small>
+    </div>
+
+    <!-- Password -->
+    <div class="form-control">
+      <label for="password">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password"
+        placeholder="Enter your password"
+      >
+      <small class="error-password"></small>
+    </div>
+
+    <button type="submit">Submit</button>
+
+    <div id="result_message"></div>
+  </form>
+</div>
+  
+
+  <script src="7.js"></script>
+</body>
+</html>
